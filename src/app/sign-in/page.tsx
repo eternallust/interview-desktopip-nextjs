@@ -1,12 +1,15 @@
 import React from "react";
-import FormLogin from "./FormLogin";
+import FormLoginSection from "./FormLoginSection";
 
 export default function SignIn() {
   return (
     <div className="max-md:h-[calc(100vh_-_80px)] md:h-screen w-full flex flex-col justify-center items-center bg-light-blue">
       <div className="w-full max-md:max-w-xs md:w-[40rem] bg-white shadow-md rounded">
         <h4 className="text-black text-2xl font-bold px-8 pt-6">Sign In</h4>
-        <FormLogin />
+        <section id="form-login-section">
+          <FormLoginSection />
+        </section>
+
         <div className="mt-4 text-center">
           <a
             href="#"
