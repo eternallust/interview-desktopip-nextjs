@@ -15,6 +15,7 @@ export default function ButtonLogin() {
   const handleClick = () => {
     if (token) {
       localStorage.removeItem("token");
+      localStorage.removeItem("email");
       alert("Anda Telah Logout");
     }
     router.push("/sign-in");
